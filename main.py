@@ -19,7 +19,7 @@ def valid_input():
     email_error = ''
 
     error_check = False
-
+    
     if username == '':
         username_error = 'Invalid Username'
         error_check = True
@@ -58,6 +58,11 @@ def valid_input():
         elif (len(email) <3) or (len(email) >20):
             email_error = 'Email Address must be greater than 3 characters but less than 20 characters'
             error_check = True
+    if username == '' and password1 == '' and password2 == '' and email == '':
+        username_error = 'Username Required'
+        password1_error = 'Enter Password'
+        password2_error = 'Enter Password'
+        error_check = True
 
     if error_check == True:
         return render_template('index.html', username_error = username_error, password1_error = password1_error, password2_error = password2_error, email_error = email_error, username = username, email = email)
