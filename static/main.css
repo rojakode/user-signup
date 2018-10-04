@@ -1,0 +1,40 @@
+body {
+    background-image: url("/static/images/speedback.png")
+}
+h1{
+    font-style: verdana;
+    color: rgb(226, 121, 121);
+    text-align: center;
+}
+div {
+    background-color: rgb(13, 189, 224);
+    padding: 20px;
+    margin: 0 auto;
+    width: 540px;
+    font: 16px verdana;
+    border-radius: 10px;
+}
+textarea {
+    margin: 50px;
+    width: 540px;
+    height: 250px;
+    background-color: rgb(71, 8, 8);
+}
+input[type=submit] {
+    margin-left: 50%;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    font: 15px Tahoma;
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+}
+input[type=submit]:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.error{
+    color: red;
+    font: 12px verdana;
+}
